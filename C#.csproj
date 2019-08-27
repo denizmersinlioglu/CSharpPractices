@@ -9,5 +9,6 @@
   <ItemGroup>
     <Folder Include="Events-Delegates\" />
     <Folder Include="Lambdas\" />
+    <Folder Include="Linq\" />
   </ItemGroup>
 </Project>

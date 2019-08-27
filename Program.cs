@@ -2,12 +2,25 @@
 using System.Collections.Generic;
 using EventsDelegates;
 using Lambdas;
+using Linq;
 
 class Program {
 
     static void Main(string[] args) {
-        //PerfomEventDelegates();
+        PerfomEventDelegates();
+
+        Console.WriteLine();
+
         PerformLambdas();
+
+        Console.WriteLine();
+
+        LinqProgram.QueryAnimalData();
+        LinqProgram.QueryIntArray();
+        LinqProgram.QueryStringArray();
+
+        Console.WriteLine();
+
     }
 
 
@@ -61,7 +74,9 @@ class Program {
         mathService.MultiplyNumbersCustom(1, 2);
 
         mathService.CalculateNumbers(1, 3, (a, b) => a * b);
+        mathService.CalculateNumbers(1, 25, (a, b) => a * b);
         mathService.CalculateActionNumbers(1, 4, (a, b) => a * b);
+        mathService.CalculateActionNumbers(1, 26, (a, b) => a * b);
 
     }
 
